@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Overall Container -->
+    <div class="flex h-screen">
+      <!--Left-side image div-->
+      <div class="w-1/2 flex items-center justify-center bg-[#eff1f7]">
+        <img src="./images/login-left-img.svg" class="max-w-full h-auto">
+      </div>
+      <!-- Right-side div -->
+      <div class="w-1/2 flex items-center justify-center">
+        <!-- Form container -->
+        <div class="flex-column ">
+          <!-- Logo -->
+            <img src="./images/rd-logo.svg" class="m-auto mb-5">
+            <!-- Form -->
+          <form class="flex-column">
+            <!-- Email -->
+              <label for="email">Email <span class="text-red-500">*</span></label>
+              <div class="border-1 border-gray-300 rounded-sm p-2 w-80 mt-2 mb-5">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" class="outline-none">  
+              </div>
+              <!-- Password -->
+              <label for="password">Password <span class="text-red-500">*</span></label>
+              <div class="border-1 border-gray-300 rounded-sm p-2 w-80 mt-2 mb-5">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="outline-none w-65">
+                <span class="cursor-pointer"><i class="fa-regular fa-eye-slash"></i></span>
+              </div>
+               <div>
+                <!-- Login Button-->
+                <button class="bg-[#2463eb] text-white w-full rounded-sm p-2 text-sm font-medium mt-5 cursor-pointer">LOG IN <span class="ml-2"><i class="fa-solid fa-arrow-right"></i></span></button>
+               </div>
+               <!-- Forgot password -->
+               <p class="text-center text-sm mt-3 cursor-pointer">Forgot Password?</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
